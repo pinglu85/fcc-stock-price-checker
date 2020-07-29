@@ -1,0 +1,40 @@
+{
+  "name": "fcc-stock-price-checker",
+  "version": "0.0.1",
+  "description": "FCC: Project Stock Price Checker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server",
+    "test": "mocha -u tdd tests"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "mocha": "^8.0.1",
+    "mongodb": "^3.5.9",
+    "zombie": "^6.1.4"
+  },
+  "engines": {
+    "node": "4.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "node",
+    "hyperdev",
+    "express"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
