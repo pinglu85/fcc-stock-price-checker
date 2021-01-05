@@ -24,7 +24,7 @@ const writeConcern = {
 function fetchData(stock) {
   return new Promise((resolve, reject) => {
     const options = {
-      hostname: 'repeated-alpaca.glitch.me',
+      hostname: 'stock-price-checker-proxy.freecodecamp.rocks',
       port: 443,
       path: `/v1/stock/${stock}/quote`,
       method: 'GET',
