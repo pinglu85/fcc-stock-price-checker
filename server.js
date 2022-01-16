@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv').config();
 const helmet = require('helmet');
-const MongoClient = require('mongodb').MongoClient;
+const { MongoClient } = require('mongodb');
 const assert = require('assert');
 
 const apiRoutes = require('./routes/api.js');
@@ -65,9 +65,11 @@ MongoClient.connect(
       res.status(errCode).json({ error: errMessage });
     });
 
+    const port = process.env.PORT || 3000;
+
     // Start our server and tests!
-    app.listen(process.env.PORT || 3000, function () {
-      console.log('Listening on port ' + process.env.PORT);
+    app.listen(port, function () {
+      console.log(`Listening on port ${port}`);
       if (process.env.NODE_ENV === 'test') {
         console.log('Running Tests...');
         setTimeout(function () {
