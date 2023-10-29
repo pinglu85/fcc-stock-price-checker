@@ -18,7 +18,7 @@
     "express": "^4.17.2",
     "helmet": "^5.0.1",
     "mocha": "^10.0.0",
-    "mongodb": "^4.6.0",
+    "mongodb": "^4.17.0",
     "zombie": "^6.1.4"
   },
   "engines": {
